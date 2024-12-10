@@ -4,6 +4,28 @@ This document provides a comprehensive guide to using the application, including
 
 ---
 
+## Implementation on EC2 instance
+
+First I installed the Postgres and the dependencies such as postgres python API, Flask and Flask Rest, then change the Rules to allow the HTTP Get request.
+Then ran the code to create the database and add the statistics analysis. 
+The following shows the tests taht will work as long as the EC2 inistance is up runing.
+
+### accessing through terminal
+```bash
+Test curl "http://3.83.16.4:5000/api/weather/stats?year=1985"
+```
+![img](answers/image.png)
+
+--- 
+
+### accessing through browser
+```bash
+http://3.83.16.4:5000/api/weather/stats?year=1985
+```
+![img](answers/image%20copy.png)
+
+
+
 ## **Getting Started**
 
 ### **1. Prerequisites**
